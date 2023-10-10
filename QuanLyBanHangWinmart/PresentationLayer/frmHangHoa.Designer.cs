@@ -1,4 +1,4 @@
-﻿namespace QuanLyBanHangWinmart
+﻿namespace QuanLyBanHangWinmart.PresentationLayer
 {
     partial class frmHangHoa
     {
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tabContainer = new System.Windows.Forms.TabControl();
             this.tpChinhSua = new System.Windows.Forms.TabPage();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
@@ -70,15 +69,13 @@
             this.txtTenSPS = new System.Windows.Forms.TextBox();
             this.lblTenNCCS = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.grpDanhSach = new System.Windows.Forms.GroupBox();
             this.dgvSP = new System.Windows.Forms.DataGridView();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
             this.tabContainer.SuspendLayout();
             this.tpChinhSua.SuspendLayout();
             this.tpTimKiem.SuspendLayout();
@@ -97,7 +94,7 @@
             this.tabContainer.Name = "tabContainer";
             this.tabContainer.SelectedIndex = 0;
             this.tabContainer.Size = new System.Drawing.Size(1139, 286);
-            this.tabContainer.TabIndex = 19;
+            this.tabContainer.TabIndex = 20;
             // 
             // tpChinhSua
             // 
@@ -311,31 +308,31 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(578, 133);
+            this.dateTimePicker2.Location = new System.Drawing.Point(750, 133);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker2.Size = new System.Drawing.Size(237, 22);
             this.dateTimePicker2.TabIndex = 132;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(578, 80);
+            this.dateTimePicker1.Location = new System.Drawing.Point(750, 81);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(237, 22);
             this.dateTimePicker1.TabIndex = 131;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(578, 30);
+            this.comboBox2.Location = new System.Drawing.Point(750, 33);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(125, 24);
+            this.comboBox2.Size = new System.Drawing.Size(237, 24);
             this.comboBox2.TabIndex = 130;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(489, 181);
+            this.label9.Location = new System.Drawing.Point(633, 181);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(62, 16);
             this.label9.TabIndex = 88;
@@ -344,7 +341,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(489, 133);
+            this.label7.Location = new System.Drawing.Point(633, 139);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 16);
             this.label7.TabIndex = 87;
@@ -353,7 +350,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(489, 81);
+            this.label6.Location = new System.Drawing.Point(633, 86);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 16);
             this.label6.TabIndex = 86;
@@ -362,7 +359,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(489, 33);
+            this.label1.Location = new System.Drawing.Point(633, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 85;
@@ -403,7 +400,7 @@
             this.cboMaLoaiHangS.Location = new System.Drawing.Point(335, 27);
             this.cboMaLoaiHangS.Margin = new System.Windows.Forms.Padding(4);
             this.cboMaLoaiHangS.Name = "cboMaLoaiHangS";
-            this.cboMaLoaiHangS.Size = new System.Drawing.Size(103, 24);
+            this.cboMaLoaiHangS.Size = new System.Drawing.Size(123, 24);
             this.cboMaLoaiHangS.TabIndex = 63;
             // 
             // txtSoLuongSTo
@@ -423,11 +420,10 @@
             this.btnHienTatCa.TabIndex = 31;
             this.btnHienTatCa.Text = "Hiện Tất Cả";
             this.btnHienTatCa.UseVisualStyleBackColor = true;
-            this.btnHienTatCa.Click += new System.EventHandler(this.btnHienTatCa_Click);
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(556, 210);
+            this.btnTimKiem.Location = new System.Drawing.Point(586, 210);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(0);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(92, 32);
@@ -478,7 +474,7 @@
             this.txtTenSPS.Location = new System.Drawing.Point(107, 75);
             this.txtTenSPS.Margin = new System.Windows.Forms.Padding(0);
             this.txtTenSPS.Name = "txtTenSPS";
-            this.txtTenSPS.Size = new System.Drawing.Size(331, 22);
+            this.txtTenSPS.Size = new System.Drawing.Size(351, 22);
             this.txtTenSPS.TabIndex = 35;
             // 
             // lblTenNCCS
@@ -501,17 +497,60 @@
             this.lbl.TabIndex = 58;
             this.lbl.Text = "-";
             // 
-            // contextMenuStrip1
+            // btnHuy
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnHuy.Location = new System.Drawing.Point(915, 326);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(0);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(89, 32);
+            this.btnHuy.TabIndex = 143;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
             // 
-            // imageList1
+            // btnXoa
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnXoa.Location = new System.Drawing.Point(726, 326);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(0);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(89, 32);
+            this.btnXoa.TabIndex = 142;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSua.Location = new System.Drawing.Point(512, 326);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(89, 32);
+            this.btnSua.TabIndex = 141;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLuu.Location = new System.Drawing.Point(333, 326);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(89, 32);
+            this.btnLuu.TabIndex = 140;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnThem.Location = new System.Drawing.Point(149, 326);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(0);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(89, 32);
+            this.btnThem.TabIndex = 139;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
             // 
             // grpDanhSach
             // 
@@ -519,12 +558,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpDanhSach.Controls.Add(this.dgvSP);
-            this.grpDanhSach.Location = new System.Drawing.Point(13, 397);
+            this.grpDanhSach.Location = new System.Drawing.Point(17, 396);
             this.grpDanhSach.Margin = new System.Windows.Forms.Padding(4);
             this.grpDanhSach.Name = "grpDanhSach";
             this.grpDanhSach.Padding = new System.Windows.Forms.Padding(4);
-            this.grpDanhSach.Size = new System.Drawing.Size(1116, 258);
-            this.grpDanhSach.TabIndex = 21;
+            this.grpDanhSach.Size = new System.Drawing.Size(1131, 274);
+            this.grpDanhSach.TabIndex = 144;
             this.grpDanhSach.TabStop = false;
             this.grpDanhSach.Text = "Danh sách sản phẩm";
             // 
@@ -543,75 +582,20 @@
             this.dgvSP.RowHeadersWidth = 51;
             this.dgvSP.RowTemplate.Height = 25;
             this.dgvSP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSP.Size = new System.Drawing.Size(1108, 235);
+            this.dgvSP.Size = new System.Drawing.Size(1123, 251);
             this.dgvSP.TabIndex = 0;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnThem.Location = new System.Drawing.Point(17, 336);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(0);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(89, 32);
-            this.btnThem.TabIndex = 134;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLuu.Location = new System.Drawing.Point(174, 336);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(89, 32);
-            this.btnLuu.TabIndex = 135;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSua.Location = new System.Drawing.Point(357, 336);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(89, 32);
-            this.btnSua.TabIndex = 136;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnXoa.Location = new System.Drawing.Point(540, 336);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(0);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(89, 32);
-            this.btnXoa.TabIndex = 137;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnHuy.Location = new System.Drawing.Point(698, 336);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(0);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(89, 32);
-            this.btnHuy.TabIndex = 138;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
             // 
             // frmHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 668);
+            this.ClientSize = new System.Drawing.Size(1178, 776);
+            this.Controls.Add(this.grpDanhSach);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.grpDanhSach);
             this.Controls.Add(this.tabContainer);
             this.Name = "frmHangHoa";
             this.Text = "frmHangHoa";
@@ -630,6 +614,13 @@
 
         private System.Windows.Forms.TabControl tabContainer;
         private System.Windows.Forms.TabPage tpChinhSua;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cboMaLoaiHang;
         private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.Label lblDonGia;
@@ -641,6 +632,13 @@
         private System.Windows.Forms.TextBox txtMaHang;
         private System.Windows.Forms.Label lblMaSP;
         private System.Windows.Forms.TabPage tpTimKiem;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.Label lblCountText;
         private System.Windows.Forms.ComboBox cboMaSPS;
@@ -655,28 +653,12 @@
         private System.Windows.Forms.TextBox txtTenSPS;
         private System.Windows.Forms.Label lblTenNCCS;
         private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.GroupBox grpDanhSach;
         private System.Windows.Forms.DataGridView dgvSP;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnHuy;
     }
 }

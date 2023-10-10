@@ -65,7 +65,6 @@
             this.mtxtMatKhau.PasswordChar = '*';
             this.mtxtMatKhau.Size = new System.Drawing.Size(214, 20);
             this.mtxtMatKhau.TabIndex = 11;
-            this.mtxtMatKhau.Text = "password1";
             // 
             // lblPassword
             // 
@@ -82,7 +81,6 @@
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(214, 20);
             this.txtTenDangNhap.TabIndex = 9;
-            this.txtTenDangNhap.Text = "user1";
             // 
             // lblUsername
             // 

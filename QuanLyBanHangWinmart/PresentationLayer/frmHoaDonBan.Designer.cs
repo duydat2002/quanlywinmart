@@ -71,8 +71,11 @@
             this.label16 = new System.Windows.Forms.Label();
             this.dtpNgayBanSFrom = new System.Windows.Forms.DateTimePicker();
             this.cboMaHDBS = new System.Windows.Forms.ComboBox();
+            this.txtGiaBanSTo = new System.Windows.Forms.TextBox();
             this.btnTimKiemHD = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
             this.cboMaNVS = new System.Windows.Forms.ComboBox();
+            this.txtGiaBanSFrom = new System.Windows.Forms.TextBox();
             this.btnHienTatCaHD = new System.Windows.Forms.Button();
             this.lblTenNVS = new System.Windows.Forms.Label();
             this.lblNgayBanS = new System.Windows.Forms.Label();
@@ -87,9 +90,6 @@
             this.btnHienTatCaCT = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.dtpBaoHanhSFrom = new System.Windows.Forms.DateTimePicker();
-            this.txtGiaBanSTo = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txtGiaBanSFrom = new System.Windows.Forms.TextBox();
             this.txtSLBanSTo = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.cboMaCTHDB = new System.Windows.Forms.ComboBox();
@@ -380,7 +380,7 @@
             // 
             this.txtMaCTHDB.Location = new System.Drawing.Point(99, 136);
             this.txtMaCTHDB.Name = "txtMaCTHDB";
-            this.txtMaCTHDB.Size = new System.Drawing.Size(148, 24);
+            this.txtMaCTHDB.Size = new System.Drawing.Size(271, 24);
             this.txtMaCTHDB.TabIndex = 55;
             // 
             // label3
@@ -453,7 +453,7 @@
             this.cboMaSP.Location = new System.Drawing.Point(99, 31);
             this.cboMaSP.Margin = new System.Windows.Forms.Padding(4);
             this.cboMaSP.Name = "cboMaSP";
-            this.cboMaSP.Size = new System.Drawing.Size(148, 26);
+            this.cboMaSP.Size = new System.Drawing.Size(271, 26);
             this.cboMaSP.TabIndex = 37;
             // 
             // txtSLBan
@@ -461,7 +461,7 @@
             this.txtSLBan.Location = new System.Drawing.Point(99, 80);
             this.txtSLBan.Margin = new System.Windows.Forms.Padding(0);
             this.txtSLBan.Name = "txtSLBan";
-            this.txtSLBan.Size = new System.Drawing.Size(148, 24);
+            this.txtSLBan.Size = new System.Drawing.Size(271, 24);
             this.txtSLBan.TabIndex = 37;
             // 
             // lblSLBan
@@ -608,6 +608,14 @@
             this.cboMaHDBS.Size = new System.Drawing.Size(167, 26);
             this.cboMaHDBS.TabIndex = 44;
             // 
+            // txtGiaBanSTo
+            // 
+            this.txtGiaBanSTo.Location = new System.Drawing.Point(262, 151);
+            this.txtGiaBanSTo.Margin = new System.Windows.Forms.Padding(0);
+            this.txtGiaBanSTo.Name = "txtGiaBanSTo";
+            this.txtGiaBanSTo.Size = new System.Drawing.Size(105, 24);
+            this.txtGiaBanSTo.TabIndex = 130;
+            // 
             // btnTimKiemHD
             // 
             this.btnTimKiemHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -619,6 +627,16 @@
             this.btnTimKiemHD.Text = "Tìm Kiếm";
             this.btnTimKiemHD.UseVisualStyleBackColor = true;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label18.Location = new System.Drawing.Point(225, 154);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(13, 18);
+            this.label18.TabIndex = 129;
+            this.label18.Text = "-";
+            // 
             // cboMaNVS
             // 
             this.cboMaNVS.FormattingEnabled = true;
@@ -627,6 +645,14 @@
             this.cboMaNVS.Name = "cboMaNVS";
             this.cboMaNVS.Size = new System.Drawing.Size(167, 26);
             this.cboMaNVS.TabIndex = 35;
+            // 
+            // txtGiaBanSFrom
+            // 
+            this.txtGiaBanSFrom.Location = new System.Drawing.Point(104, 148);
+            this.txtGiaBanSFrom.Margin = new System.Windows.Forms.Padding(0);
+            this.txtGiaBanSFrom.Name = "txtGiaBanSFrom";
+            this.txtGiaBanSFrom.Size = new System.Drawing.Size(105, 24);
+            this.txtGiaBanSFrom.TabIndex = 128;
             // 
             // btnHienTatCaHD
             // 
@@ -783,32 +809,6 @@
             this.dtpBaoHanhSFrom.Name = "dtpBaoHanhSFrom";
             this.dtpBaoHanhSFrom.Size = new System.Drawing.Size(119, 24);
             this.dtpBaoHanhSFrom.TabIndex = 134;
-            // 
-            // txtGiaBanSTo
-            // 
-            this.txtGiaBanSTo.Location = new System.Drawing.Point(262, 151);
-            this.txtGiaBanSTo.Margin = new System.Windows.Forms.Padding(0);
-            this.txtGiaBanSTo.Name = "txtGiaBanSTo";
-            this.txtGiaBanSTo.Size = new System.Drawing.Size(105, 24);
-            this.txtGiaBanSTo.TabIndex = 130;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label18.Location = new System.Drawing.Point(225, 154);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(13, 18);
-            this.label18.TabIndex = 129;
-            this.label18.Text = "-";
-            // 
-            // txtGiaBanSFrom
-            // 
-            this.txtGiaBanSFrom.Location = new System.Drawing.Point(104, 148);
-            this.txtGiaBanSFrom.Margin = new System.Windows.Forms.Padding(0);
-            this.txtGiaBanSFrom.Name = "txtGiaBanSFrom";
-            this.txtGiaBanSFrom.Size = new System.Drawing.Size(105, 24);
-            this.txtGiaBanSFrom.TabIndex = 128;
             // 
             // txtSLBanSTo
             // 

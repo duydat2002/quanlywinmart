@@ -83,6 +83,7 @@
       <HintPath>..\packages\CrystalReports.ReportAppServer.XmlSerialize.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalReports.Shared.13.0.4003\lib\net40\CrystalDecisions.Shared.dll</HintPath>
     </Reference>
@@ -93,6 +94,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -105,9 +107,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogicLayer\DangNhapBLL.cs" />
-    <Compile Include="BusinessLogicLayer\NhanVienBLL.cs" />
-    <Compile Include="DataAccessLayer\NhanVienDAL.cs" />
     <Compile Include="DataAccessLayer\TaiKhoanDAL.cs" />
+    <Compile Include="PresentationLayer\frmGiaoDIchBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\frmGiaoDIchBanHang.Designer.cs">
+      <DependentUpon>frmGiaoDIchBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\frmGiaoDichTraHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\frmGiaoDichTraHang.Designer.cs">
+      <DependentUpon>frmGiaoDichTraHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\frmHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +137,18 @@
     </Compile>
     <Compile Include="PresentationLayer\frmHoaDonNhap.Designer.cs">
       <DependentUpon>frmHoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\frmKhachHangThanThiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\frmKhachHangThanThiet.Designer.cs">
+      <DependentUpon>frmKhachHangThanThiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\frmLichSuBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\frmLichSuBanHang.Designer.cs">
+      <DependentUpon>frmLichSuBanHang.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\frmLoaiHang.cs">
       <SubType>Form</SubType>
@@ -156,8 +180,20 @@
     <Compile Include="PresentationLayer\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\frmTraCuuHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\frmTraCuuHangHoa.Designer.cs">
+      <DependentUpon>frmTraCuuHangHoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PresentationLayer\frmGiaoDIchBanHang.resx">
+      <DependentUpon>frmGiaoDIchBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\frmGiaoDichTraHang.resx">
+      <DependentUpon>frmGiaoDichTraHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\frmHangHoa.resx">
       <DependentUpon>frmHangHoa.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +202,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\frmHoaDonNhap.resx">
       <DependentUpon>frmHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\frmKhachHangThanThiet.resx">
+      <DependentUpon>frmKhachHangThanThiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\frmLichSuBanHang.resx">
+      <DependentUpon>frmLichSuBanHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\frmLoaiHang.resx">
       <DependentUpon>frmLoaiHang.cs</DependentUpon>
@@ -181,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\frmTraCuuHangHoa.resx">
+      <DependentUpon>frmTraCuuHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -205,11 +250,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="SQL query\CreateProcedure.sql" />
-    <Content Include="SQL query\CreateTable.sql" />
-    <Content Include="SQL query\InsertData.sql" />
-    <Content Include="SQL query\Setup.sql" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

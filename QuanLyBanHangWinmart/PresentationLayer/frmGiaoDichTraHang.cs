@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyBanHangWinmart
+namespace QuanLyBanHangWinmart.PresentationLayer
 {
-    public partial class frmLoaiHang : Form
+    public partial class frmGiaoDichTraHang : Form
     {
-        public frmLoaiHang()
+        public frmGiaoDichTraHang()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void dgvHoaDonBan_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

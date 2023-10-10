@@ -38,7 +38,7 @@ namespace QuanLyBanHangWinmart
                     this.Hide();
                     frmMain frm = new frmMain();
                     frm.ShowDialog();
-                    Close(); 
+                    Close();
                 }
             }
             catch (SqlException ex)

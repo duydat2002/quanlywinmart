@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyBanHangWinmart
+namespace QuanLyBanHangWinmart.PresentationLayer
 {
-    public partial class frmLoaiHang : Form
+    public partial class frmGiaoDIchBanHang : Form
     {
-        public frmLoaiHang()
+        public frmGiaoDIchBanHang()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

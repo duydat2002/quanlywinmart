@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyBanHangWinmart
+namespace QuanLyBanHangWinmart.PresentationLayer
 {
     public partial class frmHangHoa : Form
     {
         public frmHangHoa()
         {
             InitializeComponent();
-        }
-
-        private void btnHienTatCa_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
