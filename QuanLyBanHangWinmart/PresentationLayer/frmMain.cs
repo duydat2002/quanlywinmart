@@ -74,7 +74,9 @@ namespace QuanLyBanHangWinmart
 
         private void tsmiNhaCungCap_Click(object sender, EventArgs e)
         {
-
+            frmNhaCungCap frm = new frmNhaCungCap();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void tsmiKhachHangThanThiet_Click(object sender, EventArgs e)

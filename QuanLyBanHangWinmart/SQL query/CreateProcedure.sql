@@ -271,3 +271,55 @@ BEGIN
 	DELETE FROM dbo.tblHangHoa
 	WHERE sMaHang = @MaHang
 END
+
+
+/*==== Nhà cung cấp====*/
+
+--lấy tất cả nhà cung cấp
+
+create proc prLayTatCaNCC
+as
+begin
+	select sMaNCC, sTenNCC, sDiaChi, sSDT
+	from tblNhaCungCap
+end
+exec prLayTatCaNCC
+
+--Thêm nhà cung cấp
+
+create proc prThemNCC
+(@MaNCC varchar(10), @TenNCC nvarchar(255), @DiaChi nvarchar(255), @SDT varchar(15))
+as 
+begin
+	insert into tblNhaCungCap(sMaNCC, sTenNCC, sDiaChi, sSDT)
+	values(@MaNCC, @TenNCC, @DiaChi, @SDT)
+end
+
+--Sửa nhà cung cấp 
+
+create proc prSuaNCC
+(@MaNCC varchar(10), @TenNCC nvarchar(255), @DiaChi nvarchar(255), @SDT varchar(15))
+as 
+begin
+	update tblNhaCungCap
+	set sMaNCC = @MaNCC,
+		sTenNCC = @TenNCC,
+		sDiaChi = @DiaChi,
+		sSDT = @SDT
+	where sMaNCC=@MaNCC
+end
+
+-- Xoá nhà cung cấp 
+
+create proc prXoaNCC
+@MaNCC varchar(10)
+as 
+begin
+	delete from tblNhaCungCap
+	where sMaNCC=@MaNCC
+end
+
+
+
+
+

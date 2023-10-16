@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabContainer = new System.Windows.Forms.TabControl();
             this.tpChinhSua = new System.Windows.Forms.TabPage();
             this.txtSDT = new System.Windows.Forms.TextBox();
@@ -56,11 +57,13 @@
             this.btnHuy = new System.Windows.Forms.Button();
             this.grpDanhSach = new System.Windows.Forms.GroupBox();
             this.dgvNCC = new System.Windows.Forms.DataGridView();
+            this.errorValidate = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabContainer.SuspendLayout();
             this.tpChinhSua.SuspendLayout();
             this.tpTimKiem.SuspendLayout();
             this.grpDanhSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorValidate)).BeginInit();
             this.SuspendLayout();
             // 
             // tabContainer
@@ -291,6 +294,7 @@
             this.btnThem.TabIndex = 12;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnLuu
             // 
@@ -302,6 +306,7 @@
             this.btnLuu.TabIndex = 13;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnSua
             // 
@@ -313,6 +318,7 @@
             this.btnSua.TabIndex = 14;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -324,6 +330,7 @@
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnHuy
             // 
@@ -335,6 +342,7 @@
             this.btnHuy.TabIndex = 16;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // grpDanhSach
             // 
@@ -369,6 +377,11 @@
             this.dgvNCC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNCC.Size = new System.Drawing.Size(723, 173);
             this.dgvNCC.TabIndex = 0;
+            this.dgvNCC.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNCC_CellClick);
+            // 
+            // errorValidate
+            // 
+            this.errorValidate.ContainerControl = this;
             // 
             // frmNhaCungCap
             // 
@@ -384,6 +397,7 @@
             this.Controls.Add(this.tabContainer);
             this.Name = "frmNhaCungCap";
             this.Text = "frmNhaCungCap";
+            this.Load += new System.EventHandler(this.frmNhaCungCap_Load);
             this.tabContainer.ResumeLayout(false);
             this.tpChinhSua.ResumeLayout(false);
             this.tpChinhSua.PerformLayout();
@@ -391,6 +405,7 @@
             this.tpTimKiem.PerformLayout();
             this.grpDanhSach.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorValidate)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -425,5 +440,6 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.GroupBox grpDanhSach;
         private System.Windows.Forms.DataGridView dgvNCC;
+        private System.Windows.Forms.ErrorProvider errorValidate;
     }
 }
