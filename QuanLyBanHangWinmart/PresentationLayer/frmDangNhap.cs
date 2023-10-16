@@ -26,7 +26,7 @@ namespace QuanLyBanHangWinmart
         {
             try
             {
-                if (KiemTraDangNhap())
+                if (KiemTraDangNhap(txtTenDangNhap.Text,mtxtMatKhau.Text))
                 {
                     DataTable dt = dangNhapBLL.dangNhap(txtTenDangNhap.Text, mtxtMatKhau.Text);
                     Program.nhanvien = new NhanVien(
@@ -55,18 +55,18 @@ namespace QuanLyBanHangWinmart
             this.Close();
         }
 
-        private bool KiemTraDangNhap()
+        public bool KiemTraDangNhap(string uname, string pass)
         {
             lblLoi.Text = ""; 
 
-            if (txtTenDangNhap.Text.Trim() == "")
+            if (uname.Trim() == "")
             {
                 lblLoi.Text = "Vui lòng nhập tài khoản.";
                 txtTenDangNhap.Focus();
                 return false;
             }
 
-            if (mtxtMatKhau.Text.Trim() == "")
+            if (pass.Trim() == "")
             {
                 lblLoi.Text = "Vui lòng nhập mật khẩu.";
                 mtxtMatKhau.Focus();

@@ -19,7 +19,7 @@ namespace QuanLyBanHangWinmart
         }
     }
 
-    class NhanVien
+    public class NhanVien
     {
         public NhanVien()
         {

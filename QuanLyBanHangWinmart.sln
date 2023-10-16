@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34018.315
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyBanHangWinmart", "QuanLyBanHangWinmart\QuanLyBanHangWinmart.csproj", "{7AAA2732-7840-411A-828F-1166C26C2B56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestLogin", "UnitTestLogin\UnitTestLogin.csproj", "{E146663F-4C64-42B7-958E-BE184D8F07BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7AAA2732-7840-411A-828F-1166C26C2B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AAA2732-7840-411A-828F-1166C26C2B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AAA2732-7840-411A-828F-1166C26C2B56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E146663F-4C64-42B7-958E-BE184D8F07BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E146663F-4C64-42B7-958E-BE184D8F07BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E146663F-4C64-42B7-958E-BE184D8F07BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E146663F-4C64-42B7-958E-BE184D8F07BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
