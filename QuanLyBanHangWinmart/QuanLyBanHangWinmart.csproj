@@ -112,6 +112,12 @@
     <Compile Include="DataAccessLayer\LoaiHangHoaDAL.cs" />
     <Compile Include="DataAccessLayer\NhanVienDAL.cs" />
     <Compile Include="DataAccessLayer\TaiKhoanDAL.cs" />
+    <Compile Include="PresentationLayer\Class1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Class1.Designer.cs">
+      <DependentUpon>Class1.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\frmGiaoDichBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
