@@ -194,9 +194,9 @@ namespace QuanLyBanHangWinmart
                         nhanVienBLL.suaNhanVien(
                             txtMaNV.Text.Trim(),
                             txtTenNV.Text.Trim(),
+                            dtpNgaySinh.Value.Date,
                             cboGioiTinh.Text == "Nam",
                             txtQueQuan.Text.Trim(),
-                            dtpNgaySinh.Value.Date,
                             dtpNgayVaoLam.Value.Date,
                             txtSDT.Text.Trim(),
                             cboTrangThai.Text == "Đang làm");

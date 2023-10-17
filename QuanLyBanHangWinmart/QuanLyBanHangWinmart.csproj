@@ -108,6 +108,8 @@
     <Compile Include="BusinessLogicLayer\HangHoaBLL.cs" />
     <Compile Include="BusinessLogicLayer\LoaiHangHoaBLL.cs" />
     <Compile Include="BusinessLogicLayer\NhanVienBLL.cs" />
+    <Compile Include="BusinessLogicLayer\TaikhoanBLL.cs" />
+    <Compile Include="DataAccessLayer\DangNhapDAL.cs" />
     <Compile Include="DataAccessLayer\HangHoaDAL.cs" />
     <Compile Include="DataAccessLayer\LoaiHangHoaDAL.cs" />
     <Compile Include="DataAccessLayer\NhanVienDAL.cs" />

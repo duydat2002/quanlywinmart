@@ -24,14 +24,7 @@ namespace QuanLyBanHangWinmart.DataAccessLayer
                     using (SqlDataAdapter da = new SqlDataAdapter(cm))
                     {
                         DataTable dt = new DataTable("tblDangNhap");
-                        try
-                        {
-                            da.Fill(dt);
-                        } catch (SqlException)
-                        {
-                            return null;
-                        }
-                        
+                        da.Fill(dt);
                         return dt;
                     }
                 }

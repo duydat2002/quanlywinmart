@@ -271,3 +271,19 @@ BEGIN
 	DELETE FROM dbo.tblHangHoa
 	WHERE sMaHang = @MaHang
 END
+GO
+/*==TÀI KHOẢN ==*/
+CREATE OR ALTER PROCEDURE prThemTaiKhoan(@sMaTK VARCHAR(10), @sTenDangNhap NVARCHAR(100), 
+	@sMatKhau VARCHAR(50),@sMaNV VARCHAR(10),@sMaLoaiTK VARCHAR(10))
+AS
+BEGIN
+	DECLARE @Check BIT = 1
+	IF EXISTS (SELECT sMaTK FROM dbo.tblTaiKhoan WHERE sMaTK = @sMaTK)
+	BEGIN
+	    RAISERROR(N'Mã TK đã tồn tại!',16,10);
+	    SET @Check = 0
+	END
+	
+	INSERT INTO dbo.tblTaiKhoan(sMaTK, sTenDangNhap,sMatKhau ,sMaNV ,sMaLoaiTK)
+	VALUES(@sMaTK, @sTenDangNhap,@sMatKhau ,@sMaNV ,@sMaLoaiTK )
+END

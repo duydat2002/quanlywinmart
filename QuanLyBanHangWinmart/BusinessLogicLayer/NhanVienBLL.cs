@@ -31,7 +31,10 @@ namespace QuanLyBanHangWinmart.BusinessLogicLayer
             nhanVienDAL.themNhanVien(sMaNV, sTenNV, bGioiTinh, sQueQuan, dNgaySinh, dNgayVaoLam, sSDT, bTrangThai);
         }
 
-        public void suaNhanVien(string sMaNV, string sTenNV, bool bGioiTinh, string sQueQuan, DateTime dNgaySinh, DateTime dNgayVaoLam, string sSDT, bool bTrangThai)
+        public void suaNhanVien
+            (string sMaNV, string sTenNV, DateTime dNgaySinh, 
+            bool bGioiTinh, string sQueQuan, DateTime dNgayVaoLam, 
+            string sSDT, bool bTrangThai)
         {
             nhanVienDAL.suaNhanVien(sMaNV, sTenNV, bGioiTinh, sQueQuan, dNgaySinh, dNgayVaoLam, sSDT, bTrangThai);
         }

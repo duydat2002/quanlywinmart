@@ -8,6 +8,7 @@ namespace QuanLyBanHangWinmart
 {
     internal static class Program
     {
+       
         public static NhanVien nhanvien = new NhanVien();
         
         [STAThread]

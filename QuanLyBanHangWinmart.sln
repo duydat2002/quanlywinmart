@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyBanHangWinmart", "Qua
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestLogin", "UnitTestLogin\UnitTestLogin.csproj", "{E146663F-4C64-42B7-958E-BE184D8F07BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestNhanVien", "UnitTestNhanVien\UnitTestNhanVien.csproj", "{A64FBCE9-028C-46AF-85A9-785B5FB25861}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E146663F-4C64-42B7-958E-BE184D8F07BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E146663F-4C64-42B7-958E-BE184D8F07BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E146663F-4C64-42B7-958E-BE184D8F07BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A64FBCE9-028C-46AF-85A9-785B5FB25861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A64FBCE9-028C-46AF-85A9-785B5FB25861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A64FBCE9-028C-46AF-85A9-785B5FB25861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A64FBCE9-028C-46AF-85A9-785B5FB25861}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
