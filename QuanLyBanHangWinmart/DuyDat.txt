@@ -1,0 +1,2 @@
+﻿Rút ra gì trong buổi học hôm nay
+Kiến thức về git và github 
