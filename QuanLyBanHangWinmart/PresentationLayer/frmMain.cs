@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyBanHangWinmart.PresentationLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -81,7 +82,9 @@ namespace QuanLyBanHangWinmart
 
         private void tsmiKhachHangThanThiet_Click(object sender, EventArgs e)
         {
-
+            frmKhachHangThanThiet frm = new frmKhachHangThanThiet();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void tsmiHoaDonBan_Click(object sender, EventArgs e)

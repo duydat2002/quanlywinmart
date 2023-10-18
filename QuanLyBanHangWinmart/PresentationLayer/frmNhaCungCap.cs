@@ -26,8 +26,8 @@ namespace QuanLyBanHangWinmart
 
             dgvNCC.Columns[0].HeaderText = "Mã NV";
             dgvNCC.Columns[1].HeaderText = "Tên NV";
-            dgvNCC.Columns[2].HeaderText = "Giới tính";
-            dgvNCC.Columns[3].HeaderText = "Quê quán";
+            dgvNCC.Columns[2].HeaderText = "Địa chỉ";
+            dgvNCC.Columns[3].HeaderText = "Số điện thoại";
             
 
             dgvNCC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

@@ -320,6 +320,52 @@ begin
 end
 
 
+/* Khách hàng thân thiết */
+
+--lấy tất Khách hàng thân thiết
+
+create proc prLayTatCaKhachHangTT
+as
+begin
+	select sMaKH, sTenKH, sSDT
+	from tblKhachHangThanThiet
+end
+exec prLayTatKhachHangTT
+
+--Thêm Khách hàng thân thiết
+
+create proc prThemKhachHangTT
+(@MaKH varchar(10), @TenKH nvarchar(255), @SDT varchar(15))
+as 
+begin
+	insert into tblKhachHangThanThiet(sMaKH, sTenKH, sSDT)
+	values(@MaKH, @TenKH, @SDT)
+end
+
+--Sửa Khách hàng thân thiết
+create proc prSuaKhachHangThanThiet
+(@MaKH varchar(10), @TenKH nvarchar(255), @SDT varchar(15))
+as 
+begin
+	update tblKhachHangThanThiet
+	set sMaKH = @MaKH,
+		sTenKH = @TenKH,
+		sSDT = @SDT
+	where sMaKH = @MaKH
+end
+
+-- Xoá Khách hàng thân thiết
+
+create proc prXoaKhachHangTT
+@MaKH varchar(10)
+as 
+begin
+	delete from tblKhachHangThanThiet
+	where sMaKH = @MaKH
+end
+
+
+
 
 
 

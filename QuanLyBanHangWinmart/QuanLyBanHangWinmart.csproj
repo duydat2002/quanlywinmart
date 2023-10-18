@@ -106,10 +106,12 @@
   <ItemGroup>
     <Compile Include="BusinessLogicLayer\DangNhapBLL.cs" />
     <Compile Include="BusinessLogicLayer\HangHoaBLL.cs" />
+    <Compile Include="BusinessLogicLayer\KhachHangThanThietBLL.cs" />
     <Compile Include="BusinessLogicLayer\LoaiHangHoaBLL.cs" />
     <Compile Include="BusinessLogicLayer\NhaCungCapBLLcs.cs" />
     <Compile Include="BusinessLogicLayer\NhanVienBLL.cs" />
     <Compile Include="DataAccessLayer\HangHoaDAL.cs" />
+    <Compile Include="DataAccessLayer\KhachHangThanThietDAL.cs" />
     <Compile Include="DataAccessLayer\LoaiHangHoaDAL.cs" />
     <Compile Include="DataAccessLayer\NhaCungCapDAL.cs" />
     <Compile Include="DataAccessLayer\NhanVienDAL.cs" />
