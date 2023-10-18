@@ -30,7 +30,7 @@ namespace QuanLyBanHangWinmart.DataAccessLayer
             }
         }
 
-        public void themNhanVien(string sMaNV, string sTenNV, bool bGioiTinh, string sQueQuan, DateTime dNgaySinh, DateTime dNgayVaoLam, string sSDT, bool bTrangThai)
+        public int themNhanVien(string sMaNV, string sTenNV, bool bGioiTinh, string sQueQuan, DateTime dNgaySinh, DateTime dNgayVaoLam, string sSDT, bool bTrangThai)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -47,11 +47,12 @@ namespace QuanLyBanHangWinmart.DataAccessLayer
                     cm.Parameters.AddWithValue("@TrangThai", bTrangThai);
                     con.Open();
                     cm.ExecuteNonQuery();
+                    return cm.ExecuteNonQuery();
                 }
             }
         }
 
-        public void suaNhanVien(string sMaNV, string sTenNV, bool bGioiTinh, string sQueQuan, DateTime dNgaySinh, DateTime dNgayVaoLam, string sSDT, bool bTrangThai)
+        public int suaNhanVien(string sMaNV, string sTenNV, bool bGioiTinh, string sQueQuan, DateTime dNgaySinh, DateTime dNgayVaoLam, string sSDT, bool bTrangThai)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -67,7 +68,7 @@ namespace QuanLyBanHangWinmart.DataAccessLayer
                     cm.Parameters.AddWithValue("@SDT", sSDT);
                     cm.Parameters.AddWithValue("@TrangThai", bTrangThai);
                     con.Open();
-                    cm.ExecuteNonQuery();
+                    return cm.ExecuteNonQuery();
                 }
             }
         }

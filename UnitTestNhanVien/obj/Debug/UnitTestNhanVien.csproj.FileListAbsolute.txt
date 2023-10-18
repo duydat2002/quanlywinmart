@@ -46,3 +46,4 @@ D:\QLBH_WinMart\quanlywinmart\UnitTestNhanVien\bin\Debug\zh-CHT\CrystalDecisions
 D:\QLBH_WinMart\quanlywinmart\UnitTestNhanVien\obj\Debug\UnitTestNhanVien.csproj.CopyComplete
 D:\QLBH_WinMart\quanlywinmart\UnitTestNhanVien\obj\Debug\UnitTestNhanVien.dll
 D:\QLBH_WinMart\quanlywinmart\UnitTestNhanVien\obj\Debug\UnitTestNhanVien.pdb
+D:\QLBH_WinMart\quanlywinmart\UnitTestNhanVien\bin\Debug\UnitTestNhanVien.dll.config
