@@ -1,0 +1,3 @@
+﻿Bài học rút ra : Cần mọi thành viên của nhóm đều cần biết sử dụng svn
+Cần biết các công cụ test để test bài của nhóm
+Cần giao tiếp, tương tác nhóm tốt

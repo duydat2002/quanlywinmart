@@ -246,6 +246,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="doan.txt" />
     <Content Include="SQL query\CreateProcedure.sql" />
     <Content Include="SQL query\CreateTable.sql" />
     <Content Include="SQL query\InsertData.sql" />
