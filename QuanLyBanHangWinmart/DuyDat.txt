@@ -1,12 +1,2 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace QuanLyBanHangWinmart
-{
-    class DuyDat
-    {
-    }
-}
+﻿Rút ra dược bài học gì buổi học hôm nay: 
+Tìm hiểu về git, github
