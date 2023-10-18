@@ -112,6 +112,7 @@
     <Compile Include="DataAccessLayer\LoaiHangHoaDAL.cs" />
     <Compile Include="DataAccessLayer\NhanVienDAL.cs" />
     <Compile Include="DataAccessLayer\TaiKhoanDAL.cs" />
+    <Compile Include="DQHuy.cs" />
     <Compile Include="PresentationLayer\frmGiaoDichBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
