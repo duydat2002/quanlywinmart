@@ -54,7 +54,7 @@ CREATE TABLE tblNhaCungCap (
 GO
 CREATE TABLE tblLoaiHang (
     sMaLoaiHang VARCHAR(10) NOT NULL,
-    sTenLoaiHang NVARCHAR(100) NOT NULL UNIQUE,
+    sTenLoaiHang NVARCHAR(100) NOT NULL,
     CONSTRAINT PK_tblLoaiHang PRIMARY KEY(sMaLoaiHang)
 )
 

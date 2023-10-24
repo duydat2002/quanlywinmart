@@ -123,76 +123,10 @@ EXEC dbo.prTaoMaNhanVien
 /*=== Loại Hàng ===*/
 -- Proc lấy tất cả mã loại hàng
 GO
-CREATE OR ALTER PROCEDURE prLayMaLoaiHang
+CREATE PROCEDURE prLayMaLoaiHang
 AS
 BEGIN
     SELECT sMaLoaiHang FROM dbo.tblLoaiHang
-END
-
--- Proc lấy tất cả loại hàng
-GO
-CREATE OR ALTER PROCEDURE prLayTatCaLoaiHang
-AS
-BEGIN
-    SELECT * FROM dbo.tblLoaiHang
-END
-
---Proc thêm loại hàng
-GO
-CREATE OR ALTER PROCEDURE prThemLoaiHang(@MaLoaiHang VARCHAR(10),@TenLoaiHang NVARCHAR(100))
-AS
-BEGIN
-	DECLARE @Check BIT = 1
-	IF EXISTS (SELECT sMaLoaiHang FROM dbo.tblLoaiHang WHERE sMaLoaiHang = @MaLoaiHang)
-	BEGIN
-	    RAISERROR(N'Mã loại hàng đã tồn tại!',16,10);
-	    SET @Check = 0
-	END
-	IF EXISTS (SELECT sTenLoaiHang FROM dbo.tblLoaiHang WHERE sTenLoaiHang = @TenLoaiHang)
-	BEGIN
-	    RAISERROR(N'Tên loại hàng đã tồn tại!',16,10);
-	    SET @Check = 0
-	END
-	IF @Check = 0
-	BEGIN
-	    RETURN
-	END
-	INSERT INTO dbo.tblLoaiHang(sMaLoaiHang, sTenLoaiHang)
-	VALUES(@MaLoaiHang, @TenLoaiHang)
-END
-
--- Proc sửa loại hàng
-GO
-CREATE OR ALTER PROCEDURE prSuaLoaiHang(@MaLoaiHang VARCHAR(10),@TenLoaiHang NVARCHAR(100))
-AS
-BEGIN
-	DECLARE @Check BIT = 1
-    IF NOT EXISTS (SELECT sMaLoaiHang FROM dbo.tblLoaiHang WHERE sMaLoaiHang = @MaLoaiHang)
-	BEGIN
-	    RAISERROR(N'Mã loại hàng không tồn tại!',16,10);
-	    SET @Check = 0
-	END
-	IF EXISTS (SELECT sTenLoaiHang FROM dbo.tblLoaiHang WHERE sTenLoaiHang = @TenLoaiHang AND sMaLoaiHang <> @MaLoaiHang)
-	BEGIN
-	    RAISERROR(N'Tên loại hàng đã tồn tại!',16,10);
-	    SET @Check = 0
-	END
-	IF @Check = 0
-	BEGIN
-	    RETURN
-	END
-	UPDATE dbo.tblLoaiHang
-	SET sTenLoaiHang = @TenLoaiHang
-	WHERE sMaLoaiHang = @MaLoaiHang
-END
-
---Proc xóa loại hàng
-GO
-CREATE OR ALTER PROCEDURE prXoaLoaiHang(@MaLoaiHang VARCHAR(10))
-AS
-BEGIN
-    DELETE FROM dbo.tblLoaiHang
-    WHERE sMaLoaiHang = @MaLoaiHang
 END
 
 /*=== Hàng hóa ===*/
@@ -206,15 +140,6 @@ BEGIN
 END
 
 EXEC dbo.prLayTatCaHangHoa
-
--- Proc lấy hàng hóa theo loại hàng
-GO
-CREATE OR ALTER PROCEDURE prLayHangHoaTheoLoai(@MaLoaiHang VARCHAR(10))
-AS
-BEGIN
-    SELECT * FROM dbo.tblHangHoa 
-	WHERE sMaLoaiHang = @MaLoaiHang
-END
 
 -- Proc thêm hàng hóa
 GO
